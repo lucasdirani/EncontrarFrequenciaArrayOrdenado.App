@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>EncontrarFrequenciaArrayOrdenado.App.Performance.TestePerformanceAlgoritmoFrequenciaArrayOrdenado-20230711-083100</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.5, OS=Windows 10 (10.0.19045.3086/22H2/2022Update)
+Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
+.NET SDK=7.0.203
+  [Host]     : .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2
+  DefaultJob : .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>                                                       Method</th><th>Array</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Median</th><th>Rank</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>MedirPerformanceEncontrarFrequenciaEmComplexidadeLinearDeMemoria</td><td>Int32[128]</td><td>3,876.9 &mu;s</td><td>88.00 &mu;s</td><td>246.76 &mu;s</td><td>3,789.2 &mu;s</td><td>3</td><td>4530 B</td>
+</tr><tr><td>MedirPerformanceEncontrarFrequenciaEmComplexidadeConstanteDeMemoria</td><td>Int32[128]</td><td>3,957.9 &mu;s</td><td>78.76 &mu;s</td><td>204.71 &mu;s</td><td>3,879.6 &mu;s</td><td>4</td><td>2965 B</td>
+</tr><tr><td>MedirPerformanceEncontrarFrequenciaEmComplexidadeLinearDeMemoria</td><td>Int32[18]</td><td>856.9 &mu;s</td><td>17.03 &mu;s</td><td>32.82 &mu;s</td><td>842.9 &mu;s</td><td>1</td><td>1417 B</td>
+</tr><tr><td>MedirPerformanceEncontrarFrequenciaEmComplexidadeConstanteDeMemoria</td><td>Int32[18]</td><td>847.0 &mu;s</td><td>14.84 &mu;s</td><td>12.39 &mu;s</td><td>843.7 &mu;s</td><td>1</td><td>641 B</td>
+</tr><tr><td>MedirPerformanceEncontrarFrequenciaEmComplexidadeLinearDeMemoria</td><td>Int32[203]</td><td>5,322.2 &mu;s</td><td>57.11 &mu;s</td><td>53.42 &mu;s</td><td>5,321.7 &mu;s</td><td>5</td><td>7405 B</td>
+</tr><tr><td>MedirPerformanceEncontrarFrequenciaEmComplexidadeConstanteDeMemoria</td><td>Int32[203]</td><td>5,353.5 &mu;s</td><td>81.14 &mu;s</td><td>71.93 &mu;s</td><td>5,358.7 &mu;s</td><td>5</td><td>4005 B</td>
+</tr><tr><td>MedirPerformanceEncontrarFrequenciaEmComplexidadeLinearDeMemoria</td><td>Int32[51]</td><td>2,024.1 &mu;s</td><td>25.27 &mu;s</td><td>21.11 &mu;s</td><td>2,024.4 &mu;s</td><td>2</td><td>3090 B</td>
+</tr><tr><td>MedirPerformanceEncontrarFrequenciaEmComplexidadeConstanteDeMemoria</td><td>Int32[51]</td><td>2,037.8 &mu;s</td><td>36.95 &mu;s</td><td>34.56 &mu;s</td><td>2,032.1 &mu;s</td><td>2</td><td>1522 B</td>
+</tr></tbody></table>
+</body>
+</html>
